@@ -19,9 +19,12 @@ public class Inheritance {
 class Cycle{        //super class
     public int gear;
     public int speed;
-    public Cycle(int g, int speed){             //parameterised constructor
-        this.gear=g;
-        this.speed=speed;
+    public Cycle(int g, int speed) {             //parameterised constructor
+        this.gear = g;
+        this.speed = speed;
+    }
+    Cycle(String s){
+        System.out.println("Hello this is overloaded constructor");
     }
 //    public void applyBreak(int decrement){
 //        speed -= decrement;

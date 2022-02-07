@@ -9,7 +9,7 @@ public class RandomNumbers {
         System.out.println("Enter 0 for Rock, 1 for paper, 2 for Scissor");
         int userIn = sc.nextInt();
        Random rand = new Random();
-        int compIn = rand.nextInt(3);
+        int compIn = rand.nextInt(3);           //0,1,2
         if (userIn == compIn){
             System.out.println("Draw match");
         }
