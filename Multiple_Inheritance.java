@@ -3,30 +3,31 @@ package com.company;
 public class Multiple_Inheritance {
     public static void main(String[] args) {
         Child c=new Child();
-        c.printF();
-        c.printG();
+//        c.printF();
+//        c.printG();
     }
 }
 
-
-
-interface one{
+interface father{
     public void printG();
 
 }
-interface two{
+interface mom{
     int a = 0;
     public void printF();
     }
-interface three extends one,two{
-    public void printG();
+interface child extends father,mom{
+   public void printG();
+
 }
-class Child implements three{
+class Child implements child{
     @Override public void printG(){
         System.out.println("Hello");
     }
     @Override public void printF(){
         System.out.println("This is 2nd interface inside class Child");
-
+    }
+    public void helo(){
+        System.out.println("inherited");
     }
 }

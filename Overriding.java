@@ -21,7 +21,7 @@ class Cyl extends Circle{
     public int height;
 
     Cyl(int r, int h){
-     super(r);
+//     super(r);
         this.height=h;
     }
 
