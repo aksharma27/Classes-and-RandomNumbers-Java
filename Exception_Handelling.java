@@ -4,22 +4,18 @@ import java.security.spec.ECField;
 
 public class Exception_Handelling {
     public static void main(String[] args) {
-       int[] arr = new int[5];
-       arr[0]=0;
-       arr[1]=1;
-       arr[2]=3;
-       arr[3]=4;
-       arr[4]=9;
-       try{
-           System.out.println(arr[56]);
-       }
-       catch (Exception e){
-           System.out.println("index not found");
-       }
+      int a=0;
+      int b=10;
+//      10/0
+        try {
+            System.out.println(10 / 2);
+        }
+        catch (Exception e){
+            System.out.println("cannot divide anything by 0");
+        }
         finally {
-           System.out.println("leave the page");
-       }
-
+            System.out.println("Operation over");
+        }
 
 
 //       catch (Exception e)
